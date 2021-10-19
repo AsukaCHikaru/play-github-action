@@ -27,6 +27,7 @@ jobs:
       - name: Access secrets
         env:
           env: ${{ secrets.env }}
+        run: env
         
       - name: Install node
         uses: actions/setup-node@v2
